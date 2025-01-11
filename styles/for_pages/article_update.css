@@ -1,0 +1,117 @@
+#update-article-main {
+    grid-area: main;
+    width: 98%;
+    max-width: 98%;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f7f9fc;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.update-article-heading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Form Styling */
+#article-create-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Labels and Inputs */
+#article-create-form label {
+    font-weight: 500;
+    font-weight: bold;
+    color: #555;
+}
+
+#article-create-form input,
+#article-create-form textarea,
+#article-create-form select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+#article-create-form input:focus,
+#article-create-form textarea:focus,
+#article-create-form select:focus {
+    border-color: #7ecbff;
+    outline: none;
+}
+
+.current-image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.current-image-title {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 10px;
+
+}
+
+#current-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+}
+
+/* Save Button */
+.update-save-btn {
+    background-color: #4CAF50;
+    /* Green Save button */
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.update-save-btn:hover {
+    background-color: #45a049;
+}
+
+/* Form Element Styling */
+#article-create-form p {
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #666;
+}
+
+@media (max-width: 1024px) {
+    #update-article-main {
+        justify-content: center;
+        padding-top: 100px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #update-article-main {
+        justify-content: center;
+        padding-top: 200px !important;
+    }
+}

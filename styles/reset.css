@@ -1,0 +1,49 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Remove list styles on all lists */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Remove text decoration from links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Basic styling for buttons */
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+/* Utility classes for visibility */
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}

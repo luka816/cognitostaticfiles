@@ -1,0 +1,57 @@
+.ad-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 15px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.ad-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.ad-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+}
+
+.ad-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--primary-color, #333);
+    margin: 10px 0;
+    text-align: center;
+}
+
+.ad-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+    max-height: 100px;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.ad-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--primary-color, #007BFF);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.ad-link:hover {
+    background-color: var(--primary-color-hover, #0056b3);
+}
